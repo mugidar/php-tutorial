@@ -1,4 +1,8 @@
 <?php 
-const USERNAME = "tolya";
-const PASSWORD = "123";
+const CONFIG = [
+    "data_file" => 'data.json',
+    "users" => [
+        'tolya' => '123'
+    ]
+    ];
 ?>

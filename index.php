@@ -1,7 +1,9 @@
 <?php
+require_once("requires.php");
+
 $title = "Index";
-require_once("functions.php");
 session_start();
-$data = get_data("");
-view("index", $title);
+ $json = get_data();
+ $terms = json_decode($json);
+view("index", $data);
 ?>
